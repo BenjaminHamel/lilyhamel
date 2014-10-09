@@ -1,0 +1,389 @@
+/******************************************
+1. Universal Styles (typography, ect.)
+2. Header & Nav Styles
+3. Main Body Content
+4. Sidebar Content
+5. Footer Content
+6. Blog
+7. Page Specific
+*******************************************/
+
+/*****************************************1. Universal Styles******************************************/
+body {
+padding-bottom: 150px; /* must be same height as the footer */
+display: block;
+font-family: sans-serif;
+padding: 0px;
+background-color: #CCFF99; /*D8D8D8 gray - FFF7FF pink */
+margin: 0;
+}
+
+html, body {
+height: 100%;
+}
+
+a:link {color: black;}      /* unvisited link */
+a:visited {color: gray;}  /* visited link */
+
+h1 {
+padding-left: 40;
+font-family: serif;
+font-style: italic;
+}
+h2 {
+font-style: italic;
+font-family: serif;
+}
+
+h3 {
+font-size: xx-large;
+}
+
+h4 {
+padding-left: 50px;
+font-style: italic;
+}
+
+th {
+text-align: left;
+text-transform: capitalize;
+font-size: x-large;
+}
+/*****************************************2. Header & Nav Styles******************************************/
+#wrapper {
+height: 200px;
+margin:auto;
+padding:0;
+min-height: 100%;
+height: auto !important;
+height: 100%;
+}
+#wrapper header img {
+padding-top: 15px;
+padding-left: 60px;
+}
+
+#navcontainer ul {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+#navcontainer ul li {
+	display: block;
+	float: left;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+#navcontainer ul li a {
+	background: #fff;
+	width: 78px;
+	height: 18px;
+	border-top: 1px solid #f5d7b4;
+	border-left: 1px solid #f5d7b4;
+	border-bottom: 1px solid #f5d7b4;
+	border-right: none;
+	padding: 0;
+	margin: 0 0 10px 0;
+	color: #f5d7b4;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	font: normal 10px/18px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+}
+
+#navcontainer ul li a:hover {
+	color: #930;
+	background: #f5d7b4;
+}
+
+body#home a#homenav,
+body#create a#createnav,
+body#sites a#interestnav,
+body#write a#sitenav,
+body#interests a#blognav {
+	color: #fff;
+	background: dimgray;
+	padding: inherit;
+	border-radius: 12px;
+display: block;
+text-align: center;
+}
+
+header {
+margin:0;
+border:0;
+text-align: center;
+padding-left: 60px;
+
+background: -webkit-linear-gradient(#A352CC, #CCFF99); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#A352CC, #CCFF99); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#A352CC, #CCFF99); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#A352CC, #CCFF99); /* Standard syntax */
+}
+
+.menu {
+width: 960px;
+margin: auto;
+text-align:left;
+inline-box-align:initial;
+font-style: italic;
+padding-left: 47px
+}
+
+.menu ul {
+margin: 0px;
+}
+
+.menu ul li {
+padding:10px;
+font-size:22px;
+font-family:Arial, Helvetica, sans-serif;
+text-transform:capitalize;
+font-weight:700;
+display: inline-block;
+}
+
+.menu ul > li {
+width: 150px;
+}
+
+.menu ul > li > ul {
+display: none;
+position: absolute;
+background:#eeeeee;
+}
+.menu ul > li:hover > ul {
+display: block;
+text-align: center;
+width: 167px;
+margin: 0;
+padding: 0;
+border-radius: 10px;
+}
+
+.menu ul > li > ul > li {
+}
+
+/***************************************** 3. Main Body Content******************************************/
+#content {
+width: 768px;
+min-height: 405px;
+margin-left: 245px;
+margin-right: auto;
+border-radius:20px;
+padding-left: 20px;
+padding: 10px;
+border: 0;
+background: transparent;
+padding-top: inherit;
+}
+
+#sites {
+margin-left: 35px;
+}
+
+#sites h3 a {
+font-style: italic;
+}
+
+/*****************************************4. Sidebar Content******************************************/
+.sidebar {
+font-size: initial;
+width: 199px;
+border-radius: 10px;
+min-height: 400px;
+margin: 0;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 15px;
+padding: 10px;
+padding-left: 8px;
+border: 0;
+background: lightgray;
+float: left;
+}
+
+.sidebar img {
+border-radius: 10px;
+}
+
+.sidebar p {
+color: brown;
+font-family: serif;
+}
+
+/*****************************************5. Footer Content******************************************/
+
+.footer {
+font-variant: small-caps;
+text-align: center;
+height:150px;
+width: 100%;
+z-index:-1;
+bottom: 0;
+margin:0;
+margin-top: -150px; /* negative value of footer height */
+padding:0;
+clear:both;
+background: -webkit-linear-gradient(#CCFF99, #A352CC); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#CCFF99, #A352CC); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#CCFF99, #A352CC); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#CCFF99, #A352CC); /* Standard syntax */
+}
+
+/*****************************************6. Blog******************************************/
+
+.blogmenu {
+display: flex;
+padding: 5px;
+height: 25;
+padding-top: 0;
+padding-bottom: 45;
+}
+
+#blog1 {
+padding-left: 125px;
+padding-right: 65px;
+width: 1143;
+font-family: serif;
+}
+
+#blog1 > div {
+display: none;
+float: left;
+padding-right: 80;
+}
+
+#blog1 > div:target {
+display: block;
+}
+.blogtitlelist {
+padding-left: 50px;
+padding-right: 50px;
+margin-right: 370px;
+}
+
+.blogtitlelist h4 {
+font-family: inherit;
+font-size: small;
+font-style: italic;
+padding-left: 80px;
+padding-right: 80px;
+}
+
+.blogtitlelist ul li {
+padding:0px;
+font-family:Arial, Helvetica, sans-serif;
+text-transform:capitalize;
+display: inline;
+}
+
+.blogtitlelist ul > li {
+padding-left: 10px;
+padding: 10px;
+display: inline-block;
+}
+.blogtitlelist ul > li > ul {
+display: none;
+position: absolute;
+background:#eeeeee;
+}
+.blogtitlelist ul > li:hover > ul {
+display: block;
+text-align: center;
+width: 105px;
+margin: 0;
+padding: 0;
+border-radius: 10px;
+}
+/*****************************************6. Page Specific******************************************/
+
+#blogs {
+padding-left: 50px;
+}
+
+#blogs p {
+font-style: italic;
+font-family: serif;
+font-size: large;
+padding-left: 65px;
+margin-right: 65px;
+}
+
+#interests {
+padding-left: 50px;
+}
+
+#interests p {
+font-style: italic;
+font-family: serif;
+font-size: large;
+padding-left: 65px;
+margin-right: 65px;
+}
+
+#creations {
+padding-left: 125px;
+padding-right: 65px;
+width: 1143;
+font-family: serif;
+}
+
+#creations > div {
+display: none;
+float: left;
+padding-right: 50;
+}
+
+#creations > div:target {
+display: block;
+}
+
+.creationsimgtext {
+margin-right: 50px;
+}
+
+.creationsimgtext img{
+border-radius: 10px;
+}
+.creationsimgtext p{
+margin-left: 510px;
+}
+
+.creationsimgtext ul
+{
+    list-style-type: none;
+}
+
+.creationsimgtext div {
+clear: both
+}
+
+.travelimgtext {
+margin-right: 50px;
+}
+
+.travelimgtext img{
+border-radius: 10px;
+}
+.travelimgtext p{
+margin: 10px;
+}
+
+.travelimgtext ul
+{
+    list-style-type: none;
+}
+
+.travelimgtext div {
+clear: both
+}
+
+.travelimgtext .visitorinfolink {
+text-align: center;
+}
